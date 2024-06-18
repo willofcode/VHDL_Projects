@@ -4,8 +4,8 @@
 -- 
 -- Create Date:    13:29:35 06/13/2024 
 -- Design Name: 	Mux2_1
--- Module Name:    M2_1 - Behavioral 
--- Project Name: 
+-- Module Name:    Mux2_1 - Behavioral 
+-- Project Name: 	2-1 Multiplexer Design
 -- Target Devices: 
 -- Tool versions: 
 -- Description: 
