@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: CCNY
+-- Engineer: William Ng
 --
 -- Create Date:   16:48:17 06/26/2024
 -- Design Name:   
