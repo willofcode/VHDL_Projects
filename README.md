@@ -11,3 +11,8 @@ VHDL component implementation of logic untis
 - Implemented DivRegister logic for Division
 - Implemented Control logic for Division
 - Implemented Division logic using ALU, DivRegister, and Control for Optimized Division
+
+# Lab 4:
+- Implemented Instruction decoder for Mips Processor
+- Implemented ALU Control to communicate with Decoder
+- Implemented Test Module that connects Instruction decoder and ALU control to work sychronously
