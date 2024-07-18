@@ -62,7 +62,7 @@ begin
     process (I_REG_EN, reg_file)
     begin
         if I_REG_EN = '1' then
-				reg_file <= init_reg("REG_init.txt");
+	    reg_file <= init_reg("REG_init.txt");
             O_REG_DATA_A <= reg_file(to_integer(unsigned(I_REG_SEL_RS)));
             O_REG_DATA_B <= reg_file(to_integer(unsigned(I_REG_SEL_RT)));
             if I_REG_WE = '1' and I_REG_SEL_RD /= "00000" then
