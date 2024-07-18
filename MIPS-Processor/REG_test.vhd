@@ -2,10 +2,10 @@
 -- Company: CCNY
 -- Engineer: GROUP 1
 --
--- Create Date:   00:27:25 07/17/2024
+-- Create Date:   14:04:35 07/17/2024
 -- Design Name:   
--- Module Name:   C:/Users/Willi/OneDrive/Desktop/William_Ng_Lab02_CCY/Group01_Lab05_CCZ/REG_test.vhd
--- Project Name:  Group01_Lab05_CCZ
+-- Module Name:   C:/Users/cs343/Desktop/Lab5/Group01_Lab05_CC1XC/REG_TESTER.vhd
+-- Project Name:  Group01_Lab05_CC1XC
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
@@ -25,19 +25,19 @@
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
 --------------------------------------------------------------------------------
-LIBRARY IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
-use std.textio.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+USE std.textio.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY REG_test IS
-END REG_test;
+ENTITY REG_TESTER IS
+END REG_TESTER;
  
-ARCHITECTURE behavior OF REG_test IS 
+ARCHITECTURE behavior OF REG_TESTER IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
@@ -66,8 +66,10 @@ ARCHITECTURE behavior OF REG_test IS
  	--Outputs
    signal O_REG_DATA_A : std_logic_vector(31 downto 0);
    signal O_REG_DATA_B : std_logic_vector(31 downto 0);
-	
-	constant NUM_OF_REGISTER : integer := 32;
+   -- No clocks detected in port list. Replace <clock> below with 
+   -- appropriate port name 
+	constant num_of_register : integer := 32;
+  
  
 BEGIN
  
@@ -82,7 +84,7 @@ BEGIN
           O_REG_DATA_A => O_REG_DATA_A,
           O_REG_DATA_B => O_REG_DATA_B
         );
- 
+
 
    -- Stimulus process
    stim_proc: process
@@ -146,5 +148,4 @@ BEGIN
 		end loop;
       wait;
    end process;
-
 END;
