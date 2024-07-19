@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
--- Company: CCNY
--- Engineer: GROUP 1
+-- Company: 
+-- Engineer:
 --
--- Create Date:   02:05:00 07/17/2024
+-- Create Date:   13:31:29 07/18/2024
 -- Design Name:   
--- Module Name:   C:/Users/Willi/OneDrive/Desktop/William_Ng_Lab02_CCY/Group01_Lab05_CCZ/ROM_test.vhd
--- Project Name:  Group01_Lab05_CCZ
+-- Module Name:   C:/Users/cs343/Desktop/Lab5/Group01_Lab05_CC1XC/ROM_test.vhd
+-- Project Name:  Group01_Lab05_CC1XC
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
@@ -64,7 +64,7 @@ BEGIN
           I_ROM_ADDR => I_ROM_ADDR,
           O_ROM_DATA => O_ROM_DATA
         );
- 
+
    -- Stimulus process
    stim_proc: process
 	variable num_lines : integer := 12;
