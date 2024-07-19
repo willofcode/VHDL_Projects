@@ -70,7 +70,7 @@ begin
     begin
         if I_ROM_EN = '1' then
 				ROM_Content <= init_rom("ROM_init.txt");
-            O_ROM_DATA(31 downto 24) <= ROM_Content(to_integer(unsigned(I_ROM_ADDR)));
+           			O_ROM_DATA(31 downto 24) <= ROM_Content(to_integer(unsigned(I_ROM_ADDR)));
 				O_ROM_DATA(23 downto 16) <= ROM_Content(to_integer(unsigned(I_ROM_ADDR)+1));
 				O_ROM_DATA(15 downto 8) <= ROM_Content(to_integer(unsigned(I_ROM_ADDR)+2));
 				O_ROM_DATA(7 downto 0) <= ROM_Content(to_integer(unsigned(I_ROM_ADDR)+3));
