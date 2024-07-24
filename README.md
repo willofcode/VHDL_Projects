@@ -16,3 +16,8 @@ VHDL component implementation of logic untis
 - Implemented Instruction decoder for Mips Processor
 - Implemented ALU Control to communicate with Decoder
 - Implemented Test Module that connects Instruction decoder and ALU control to work sychronously
+
+# Lab 5:
+- Implemented Register module for reading 8-byte instruction address
+- Implemented ROM module which performs read-only, short for read-only memory
+- Implemented RAM module which is short for Random Access Memory, updating RAM memory
